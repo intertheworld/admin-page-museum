@@ -1,0 +1,210 @@
+body {
+    background-color: rgba(185, 222, 249, 1) !important;
+    font-family: 'Arial', sans-serif;
+}
+
+.body-container {
+    background-color: white;
+    margin: 2rem 1rem;
+}
+
+.overzicht-btns {
+    width: 3rem;
+    height: 3rem;
+}
+
+.delete_icon {
+    width: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* From Uiverse.io by Mike11jr */
+.scene {
+    width: 10em;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube {
+    color: #ccc;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.85s cubic-bezier(.17, .67, .14, .93);
+    transform-style: preserve-3d;
+    transform-origin: 100% 50%;
+    width: 10em;
+    height: 4em;
+}
+
+.cube:hover {
+    transform: rotateX(-90deg);
+}
+
+.side {
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-block;
+    height: 4em;
+    width: 10em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    font-weight: bold;
+}
+
+.top {
+    background: wheat;
+    color: #222229;
+    transform: rotateX(90deg) translate3d(0, 0, 2em);
+    box-shadow: inset 0 0 0 5px #fff;
+}
+
+.front {
+    background: #222229;
+    color: #fff;
+    box-shadow: inset 0 0 0 5px #fff;
+    transform: translate3d(0, 0, 2em);
+}
+
+.overzicht-btns {
+    width: 3rem;
+    height: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.overzicht-btns .delete_icon {
+    width: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Specifieke stijlen voor de iconen */
+.overzicht-btns.fa-pen-to-square {
+    color: #007bff;
+    /* Blauw voor "Bewerken" */
+}
+
+.overzicht-btns.fa-pen-to-square:hover {
+    color: #0056b3;
+}
+
+.overzicht-btns.fa-copy {
+    color: #28a745;
+    /* Groen voor "Dupliceren" */
+}
+
+.overzicht-btns.fa-copy:hover {
+    color: #218838;
+}
+
+.overzicht-btns .delete_icon {
+    width: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.qr-code {
+    width: 6rem;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    border-top: 1px solid #E5E5E5;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.go-to-home {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1A2A44;
+    transition: color 0.3s ease;
+}
+
+.go-to-home:hover {
+    color: #D4A017;
+}
+
+.go-to-home .fa-arrow-left-long {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #1A2A44;
+    transition: color 0.3s ease;
+}
+
+.go-to-home:hover .fa-arrow-left-long {
+    color: #D4A017;
+}
+
+.go-to-home .header-text {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.custom-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #1A2A44;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #D4A017;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .go-to-home {
+        justify-content: center;
+    }
+
+    .go-to-home .header-text {
+        font-size: 16px;
+    }
+
+    .go-to-home .fa-arrow-left-long {
+        font-size: 18px;
+    }
+
+    .custom-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin-right: 0;
+    }
+}
+
+.table{
+    margin-bottom: 0 !important;
+
+}

@@ -1,0 +1,210 @@
+body {
+    background: url('https://img.freepik.com/free-photo/old-brown-paper-texture-background_1373-431.jpg') repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.main-content {
+    flex: 1 0 auto;
+    padding-bottom: 120px;
+
+}
+
+
+.hoofdText {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #3E2723;
+    margin: 2rem 0;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 8px double #5D4037;
+    border-radius: 2px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+
+.img-fluid {
+    border: 3px solid #5D4037;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    max-height: 500px;
+    object-fit: cover;
+}
+
+
+.controls-footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.controls-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+
+#playBtn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #6D4C41, #8D6E63);
+    border: 3px solid #4E342E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3),
+        inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#playBtn i {
+    font-size: 1.8rem;
+    color: #FFF3E0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Состояние воспроизведения */
+#playBtn.playing {
+    background: linear-gradient(145deg, #8D6E63, #6D4C41);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4),
+        inset 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.voice-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #5D4037 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.voice-btn.active {
+    background-color: #5D4037 !important;
+    color: white !important;
+}
+#img{
+    width: 20rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #foto-col {
+        order: -1;
+        
+    }
+    #img{
+        width: 10rem;
+    }
+    .controls-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .controls-wrapper {
+        justify-content: space-between;
+    }
+
+    #playBtn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .voice-btn {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
+.main-content {
+    flex: 1 0 auto;
+    padding-bottom: 9.5rem;
+}
+
+.controls-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 0rem;
+}
+
+.controls-wrapper {
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+#playBtn {
+    width: 60px;
+    height: 60px;
+}
+
+.voice-btn {
+    width: 45px;
+    height: 45px;
+}
+
+#playBtn.playing i {
+    animation: medieval-pulse 1.5s infinite;
+}
+
+#playBtn:hover {
+    transform: rotate(5deg) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4),
+        inset 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.word {
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.word.highlight {
+    background: rgba(255, 215, 0, 0.3);
+    border-radius: 3px;
+    padding: 2px 4px;
+    margin: 0 1px;
+    animation: highlight 0.3s ease;
+}
+
+@keyframes highlight {
+    from {
+        background: transparent;
+    }
+    to {
+        background: rgba(255, 215, 0, 0.3);
+    }
+}
