@@ -1,13 +1,13 @@
 <?php
-// $hostname = 'localhost';
-// $username = 'root';
-// $password = '';
-// $database = 'museum';
+$hostname = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'museum';
 
-$hostname = '160.153.132.203';
-$username = 'gip_museum';
-$password = '9&b-AZ.JWMCo(oz';
-$database = 'gip_museum';
+// $hostname = '160.153.132.203';
+// $username = 'gip_museum';
+// $password = '9&b-AZ.JWMCo(oz';
+// $database = 'gip_museum';
 
 $conn = mysqli_connect($hostname, $username, $password, $database);
 function generate_uuid_v4()

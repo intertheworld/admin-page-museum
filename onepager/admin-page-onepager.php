@@ -484,7 +484,7 @@
                     <br>
                     <div style="display: flex; justify-content: center;">
                         <button class="btn-github"
-                            onclick="window.open('')">
+                            onclick="window.open('https://github.com/intertheworld/admin-page-museum')">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
