@@ -31,6 +31,7 @@
             padding: 0;
             scroll-behavior: smooth;
             height: 100%;
+            overflow-x: hidden;
         }
 
         .section {
@@ -250,12 +251,92 @@
         }
 
         #museumphoto_modal {
-            transform: scale(1.05);
             opacity: 0.9;
         }
-        .modal-content{
+
+        .modal-content {
+            position: absolute;
             background-image: url("./img/modal_background.jpg");
             background-size: cover;
+        }
+
+        /* fade-in animation */
+        :root {
+            --fade-duration: 1s;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity var(--fade-duration) ease-out, transform var(--fade-duration) ease-out;
+        }
+
+        .fade-in-right {
+            transform: translateX(50px);
+        }
+
+        .fade-in-left {
+            transform: translateX(-50px);
+        }
+
+        .fade-in-top {
+            transform: translateY(-50px);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .fade-in:nth-child(2) {
+            transition-delay: 0.5s;
+        }
+
+        .bounce {
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+            animation-fill-mode: both;
+            transform-origin: bottom;
+        }
+
+        .bounce.active {
+            animation-name: bounce-7;
+        }
+
+        @keyframes bounce-7 {
+            0% {
+                transform: scale(1, 1) translateY(0);
+            }
+
+            10% {
+                transform: scale(1.05, .95) translateY(0);
+            }
+
+            30% {
+                transform: scale(1, 1) translateY(-100px);
+            }
+
+            50% {
+                transform: scale(1, 1) translateY(0);
+            }
+
+            57% {
+                transform: scale(1, 1) translateY(-5px);
+            }
+
+            64% {
+                transform: scale(1, 1) translateY(0);
+            }
+
+            100% {
+                transform: scale(1, 1) translateY(0);
+            }
+        }
+
+        .videodiv {
+            display: flex;
+            justify-content: center;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
         }
     </style>
 </head>
@@ -263,7 +344,7 @@
 <body>
 
     <div class="section home-section" id="home">
-        <div class="container-fluid">
+        <div class="container-fluid fade-in fade-in-top">
             <div class="navigation-div">
                 <button class="nav-btn" data-target="#home">Home</button>
                 <button class="nav-btn" data-target="#inleiding">Inleiding</button>
@@ -274,10 +355,10 @@
                 <button class="nav-btn" onclick="window.open('')">GitHub</button>
             </div>
             <div class="row" style="margin-top: 4vh;">
-                <div class="col-6" id="home-text">
+                <div class="col-6 fade-in fade-in-left" id="home-text">
                     Admin Pagina voor Museum
                 </div>
-                <div class="col-6" id="photo">
+                <div class="col-6 fade-in fade-in fade-in-right" id="photo">
                     <img class="museumphoto" src="./img/photo.png" alt="Spel interface">
                 </div>
             </div>
@@ -287,10 +368,10 @@
     <div class="section second-section" id="inleiding">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 fade-in fade-in-left">
                     <img class="museumphoto" src="./img/photo-2.png" alt="Spel interface">
                 </div>
-                <div class="col-6">
+                <div class="col-6 fade-in fade-in-right">
                     <div class="headerText">
                         <p>Inleiding</p>
                     </div>
@@ -306,14 +387,14 @@
     <div class="section first-section" id="probleemstelling">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 fade-in fade-in-left">
                     <div class="headerText">
                         <p>Probleemstelling</p>
                     </div>
                     <p class="text">Veel oude musea gebruiken nog geen digitale hulpmiddelen, waardoor bezoekers vaak geen duidelijke uitleg krijgen bij de exposities.
                         Dit maakt het moeilijk om de inhoud te begrijpen en verlaagt de interesse.</p>
                 </div>
-                <div class="col-6">
+                <div class="col-6 fade-in fade-in-right">
                     <img class="museumphoto" src="./img/photo-3.png" alt="Spel interface">
                 </div>
             </div>
@@ -323,10 +404,10 @@
     <div class="section second-section" id="plan">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 fade-in fade-in-left">
                     <img class="museumphoto" src="./img/photo-4.png" alt="Spel interface">
                 </div>
-                <div class="col-6">
+                <div class="col-6 fade-in fade-in-right">
                     <div class="headerText">
                         <p>Plan van aanpak</p>
                     </div>
@@ -350,7 +431,7 @@
     <div class="section first-section" id="realisatie">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 fade-in fade-in-left">
                     <div class="headerText">
                         <p>Realisatie</p>
                     </div>
@@ -369,8 +450,8 @@
                         Bezoekers kunnen de informatie eenvoudig bekijken door de QR-code te scannen met hun telefoon.</p>
 
                 </div>
-                <div class="col-6" style="display: flex; justify-content: center;">
-                    <img class="museumphoto" id="museumphoto_modal" src="./img/photo-5.png" alt="Spel interface"
+                <div class="col-6 videodiv fade-in fade-in-right">
+                    <img class="museumphoto bounce" id="museumphoto_modal" src="./img/photo-5.png" alt="Spel interface"
                         style="height: 85vh; 
                         object-fit: contain;    
                         padding-top: 3rem;"
@@ -378,7 +459,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 fade-in fade-in-left">
                     <p class="h3-text" style="font-size: 1.5vw;">Technologieën die zijn gebruikt:</p>
                     <div class="accordion" id="accordion">
                         <!-- HTML5 -->
@@ -464,22 +545,24 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="section second-section" id="besluit">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 fade-in fade-in-left">
                     <img class="museumphoto" src="./img/photo-6.png" alt="Spel interface" style="object-fit: contain;
-        max-height: 70vh;">
+                    max-height: 70vh;">
                 </div>
-                <div class="col-6">
+                <div class="col-6 fade-in fade-in-right">
                     <div class="headerText">
                         <p>Besluit</p>
                     </div>
                     <p class="text">
-                        Dit was mijn eerste keer aan een groot project werken, wat een leuke uitdaging was. Ik heb geleerd hoe je gegevens en afbeeldingen in een database opslaat.
-                        Het project helpt het museum moderner te maken en de bezoekerservaring te verbeteren.
+                        Dit was mijn eerste keer dat ik aan een groot project werkte die niet van school was.
+                        Ik heb geleerd hoe je gegevens en afbeeldingen in een database opslaat,
+                        wat helemaal nieuw voor me was.
+                        Daarnaast heb ik met een API gewerkt om QR-codes te maken. Een API is een soort brug tussen verschillende systemen.
+                        Dit project kan het museum moderner en verbetert de ervaring voor bezoekers.
                     </p>
                     <br>
                     <div style="display: flex; justify-content: center;">
@@ -498,6 +581,49 @@
             </div>
         </div>
     </div>
+
+    <!-- script voor fade-in-animation -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.fade-in').forEach((el) => {
+            observer.observe(el);
+        });
+        // bounce animation delay
+        // bounce animation with initial delay and delay between animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const element = document.querySelector('.bounce');
+
+            function runAnimation() {
+                element.classList.add('active');
+                setTimeout(() => {
+                    element.classList.remove('active');
+                    setTimeout(runAnimation, 4000); // 3 second delay between animations
+                }, 2000); // animation duration
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    setTimeout(() => {
+                        runAnimation(); // 1 second initial delay
+                    }, 8000);
+                }
+            }, {
+                threshold: 0.1
+            });
+
+            observer.observe(element);
+        });
+    </script>
     <!-- Script voor modal -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
