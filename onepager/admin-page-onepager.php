@@ -371,11 +371,11 @@
                 <div class="col-6 fade-in fade-in-left">
                     <img class="museumphoto" src="./img/photo-2.png" alt="Spel interface">
                 </div>
-                <div class="col-6 fade-in fade-in-right">
-                    <div class="headerText">
+                <div class="col-6 ">
+                    <div class="headerText fade-in fade-in-right">
                         <p>Inleiding</p>
                     </div>
-                    <p class="text">Musea willen hun bezoekers beter informeren met behulp van nieuwe technologie.
+                    <p class="text fade-in fade-in-right">Musea willen hun bezoekers beter informeren met behulp van nieuwe technologie.
                         Veel mensen vinden het moeilijk om lange beschrijvingen te lezen bij exposities.
                         Een QR-code systeem kan dit probleem oplossen door snelle en eenvoudige toegang tot informatie te bieden via smartphones.
                         Dit project was gemaakt voor “Limburg STEM’t Af”, een idee van dhr. F. Meyers, dat we verder hebben ontwikkeld.</p>
@@ -387,11 +387,11 @@
     <div class="section first-section" id="probleemstelling">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6 fade-in fade-in-left">
-                    <div class="headerText">
+                <div class="col-6">
+                    <div class="headerText fade-in fade-in-left">
                         <p>Probleemstelling</p>
                     </div>
-                    <p class="text">Veel oude musea gebruiken nog geen digitale hulpmiddelen, waardoor bezoekers vaak geen duidelijke uitleg krijgen bij de exposities.
+                    <p class="text fade-in fade-in-left">Veel oude musea gebruiken nog geen digitale hulpmiddelen, waardoor bezoekers vaak geen duidelijke uitleg krijgen bij de exposities.
                         Dit maakt het moeilijk om de inhoud te begrijpen en verlaagt de interesse.</p>
                 </div>
                 <div class="col-6 fade-in fade-in-right">
@@ -407,22 +407,21 @@
                 <div class="col-6 fade-in fade-in-left">
                     <img class="museumphoto" src="./img/photo-4.png" alt="Spel interface">
                 </div>
-                <div class="col-6 fade-in fade-in-right">
-                    <div class="headerText">
+                <div class="col-6 ">
+                    <div class="headerText fade-in fade-in-right">
                         <p>Plan van aanpak</p>
                     </div>
-                    <p class="h3-text" style="font-size: 1.5vw;">Website structuur bedenken:</p>
-                    <p class="text">Maak een website met een admin-paneel om exposities en qr-codes toe te voegen en te bewerken.
+                    <p class="h3-text fade-in fade-in-right" style="font-size: 1.5vw;">Website structuur bedenken:</p>
+                    <p class="text fade-in fade-in-right">Maak een website met een admin-paneel om exposities en qr-codes toe te voegen en te bewerken.
                         Zorg voor een duidelijke indeling met velden voor titel, tekst, foto en tijdperk.</p>
-                    <p class="h3-text" style="font-size: 1.5vw;">Bedenk hoe je technologie wilt gebruiken:</p>
-                    <p class="text">Ik heb nagedacht over hoe ik de technologieën die ik ken, zoals HTML, CSS, PHP en JavaScript, kan gebruiken en hoe ze met elkaar samenwerken.</p>
-                    <p class="h3-text" style="font-size: 1.5vw;">Database plannen:</p>
-                    <p class="text">Denk na over hoe de database in MySQL wordt opgezet
+                    <p class="h3-text fade-in fade-in-right" style="font-size: 1.5vw;">Bedenk hoe je technologie wilt gebruiken:</p>
+                    <p class="text fade-in fade-in-right">Ik heb nagedacht over hoe ik de technologieën die ik ken, zoals HTML, CSS, PHP en JavaScript, kan gebruiken en hoe ze met elkaar samenwerken.</p>
+                    <p class="h3-text fade-in fade-in-right" style="font-size: 1.5vw;">Database plannen:</p>
+                    <p class="text fade-in fade-in-right">Denk na over hoe de database in MySQL wordt opgezet
                         om gegevens zoals titels, teksten en foto’s goed te ordenen.</p>
-                    <p class="h3-text" style="font-size: 1.5vw;">Admin-pagina ontwerpen:</p>
-                    <p class="text">Plan een inlogpagina voor beheerders,
+                    <p class="h3-text fade-in fade-in-right" style="font-size: 1.5vw;">Admin-pagina ontwerpen:</p>
+                    <p class="text fade-in fade-in-right">Plan een inlogpagina voor beheerders,
                         zodat zij QR-codes kunnen toevoegen, bewerken of verwijderen.</p>
-
                 </div>
             </div>
         </div>
@@ -431,22 +430,22 @@
     <div class="section first-section" id="realisatie">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6 fade-in fade-in-left">
-                    <div class="headerText">
+                <div class="col-6">
+                    <div class="headerText fade-in fade-in-left">
                         <p>Realisatie</p>
                     </div>
-                    <p class="h3-text" style="font-size: 1.5vw;">Website ontwikkelen:</p>
-                    <p class="text">
+                    <p class="h3-text fade-in fade-in-left" style="font-size: 1.5vw;">Website ontwikkelen:</p>
+                    <p class="text fade-in fade-in-left">
                         Ik heb de website gebouwd met HTML en CSS voor een responsive, mooi ontwerp.
                         PHP en JavaScript zorgen voor dynamische functies en serververbindingen.
-                    <p class="h3-text" style="font-size: 1.5vw;">Database vullen:</p>
-                    <p class="text">Ik heb de MySQL-database gemaakt en gevuld met expositiegegevens zoals titels en foto’s.
+                    <p class="h3-text fade-in fade-in-left" style="font-size: 1.5vw;">Database vullen:</p>
+                    <p class="text fade-in fade-in-left">Ik heb de MySQL-database gemaakt en gevuld met expositiegegevens zoals titels en foto’s.
                         Alles is logisch opgeslagen voor snelle toegang.</p>
-                    <p class="h3-text" style="font-size: 1.5vw;">Admin-login activeren:</p>
-                    <p class="text">De inlogpagina voor beheerders is live met een veilige login.
+                    <p class="h3-text fade-in fade-in-left" style="font-size: 1.5vw;">Admin-login activeren:</p>
+                    <p class="text fade-in fade-in-left">De inlogpagina voor beheerders is live met een veilige login.
                         Beheerders kunnen nu QR-codes toevoegen, bewerken of verwijderen.</p>
-                    <p class="h3-text" style="font-size: 1.5vw;">Informatiepagina’s koppelen:</p>
-                    <p class="text">Elke QR-code is verbonden met een pagina die tekst, foto’s en audio toont.
+                    <p class="h3-text fade-in fade-in-left" style="font-size: 1.5vw;">Informatiepagina’s koppelen:</p>
+                    <p class="text fade-in fade-in-left">Elke QR-code is verbonden met een pagina die tekst, foto’s en audio toont.
                         Bezoekers kunnen de informatie eenvoudig bekijken door de QR-code te scannen met hun telefoon.</p>
 
                 </div>
@@ -459,11 +458,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 fade-in fade-in-left">
-                    <p class="h3-text" style="font-size: 1.5vw;">Technologieën die zijn gebruikt:</p>
-                    <div class="accordion" id="accordion">
+                <div class="col-12">
+                    <p class="h3-text fade-in fade-in-left" style="font-size: 1.5vw;">Technologieën die zijn gebruikt:</p>
+                    <div class="accordion fade-in fade-in-left" id="accordion">
                         <!-- HTML5 -->
-                        <div class="accordion-item">
+                        <div class="accordion-item fade-in fade-in-left">
                             <h2 class="accordion-header" id="heading1">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                                     <img src="https://icon.icepanel.io/Technology/svg/HTML5.svg" alt="htmlicon">Html5
@@ -476,7 +475,7 @@
                             </div>
                         </div>
                         <!-- CSS3 -->
-                        <div class="accordion-item">
+                        <div class="accordion-item fade-in fade-in-left">
                             <h2 class="accordion-header" id="heading2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                                     <img src="https://icon.icepanel.io/Technology/svg/CSS3.svg" alt="cssicon">Css3
@@ -489,7 +488,7 @@
                             </div>
                         </div>
                         <!-- Bootstrap5 -->
-                        <div class="accordion-item">
+                        <div class="accordion-item fade-in fade-in-left">
                             <h2 class="accordion-header" id="heading3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                                     <img src="https://icon.icepanel.io/Technology/svg/Bootstrap.svg" alt="bootstrap5">Bootstrap5
@@ -502,7 +501,7 @@
                             </div>
                         </div>
                         <!-- JavaScript -->
-                        <div class="accordion-item">
+                        <div class="accordion-item fade-in fade-in-left">
                             <h2 class="accordion-header" id="heading4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                                     <img src="https://icon.icepanel.io/Technology/svg/JavaScript.svg" alt="JavaScript">JavaScript
@@ -515,7 +514,7 @@
                             </div>
                         </div>
                         <!-- jQuery -->
-                        <div class="accordion-item">
+                        <div class="accordion-item fade-in fade-in-left">
                             <h2 class="accordion-header" id="heading5">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
                                     <img src="https://icon.icepanel.io/Technology/svg/jQuery.svg" alt="Jquery">Jquery
@@ -528,7 +527,7 @@
                             </div>
                         </div>
                         <!-- PHP -->
-                        <div class="accordion-item">
+                        <div class="accordion-item fade-in fade-in-left">
                             <h2 class="accordion-header" id="heading6">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
                                     <img src="https://www.php.net/images/logos/new-php-logo.svg" alt="php" style="width: 2.5rem;">Php
@@ -553,11 +552,11 @@
                     <img class="museumphoto" src="./img/photo-6.png" alt="Spel interface" style="object-fit: contain;
                     max-height: 70vh;">
                 </div>
-                <div class="col-6 fade-in fade-in-right">
-                    <div class="headerText">
+                <div class="col-6">
+                    <div class="headerText fade-in fade-in-right">
                         <p>Besluit</p>
                     </div>
-                    <p class="text">
+                    <p class="text fade-in fade-in-right">
                         Dit was mijn eerste keer dat ik aan een groot project werkte die niet van school was.
                         Ik heb geleerd hoe je gegevens en afbeeldingen in een database opslaat,
                         wat helemaal nieuw voor me was.
@@ -565,7 +564,7 @@
                         Dit project kan het museum moderner en verbetert de ervaring voor bezoekers.
                     </p>
                     <br>
-                    <div style="display: flex; justify-content: center;">
+                    <div class="btn-div fade-in fade-in-right" style="display: flex; justify-content: center;">
                         <button class="btn-github"
                             onclick="window.open('https://github.com/intertheworld/admin-page-museum')">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
