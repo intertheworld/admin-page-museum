@@ -287,9 +287,6 @@
             transform: translateX(0);
         }
 
-        .fade-in:nth-child(2) {
-            transition-delay: 0.5s;
-        }
 
         .bounce {
             animation-duration: 2s;
@@ -344,15 +341,15 @@
 <body>
 
     <div class="section home-section" id="home">
-        <div class="container-fluid fade-in fade-in-top">
+        <div class="container-fluid ">
             <div class="navigation-div">
-                <button class="nav-btn" data-target="#home">Home</button>
-                <button class="nav-btn" data-target="#inleiding">Inleiding</button>
-                <button class="nav-btn" data-target="#probleemstelling">Probleemstelling</button>
-                <button class="nav-btn" data-target="#plan">Plan</button>
-                <button class="nav-btn" data-target="#realisatie">Realisatie</button>
-                <button class="nav-btn" data-target="#besluit">Besluit</button>
-                <button class="nav-btn" onclick="window.open('')">GitHub</button>
+                <button class="nav-btn fade-in fade-in-top" data-target="#home">Home</button>
+                <button class="nav-btn fade-in fade-in-top" data-target="#inleiding">Inleiding</button>
+                <button class="nav-btn fade-in fade-in-top" data-target="#probleemstelling">Probleemstelling</button>
+                <button class="nav-btn fade-in fade-in-top" data-target="#plan">Plan</button>
+                <button class="nav-btn fade-in fade-in-top" data-target="#realisatie">Realisatie</button>
+                <button class="nav-btn fade-in fade-in-top" data-target="#besluit">Besluit</button>
+                <button class="nav-btn fade-in fade-in-top" onclick="window.open('')">GitHub</button>
             </div>
             <div class="row" style="margin-top: 4vh;">
                 <div class="col-6 fade-in fade-in-left" id="home-text">
@@ -447,7 +444,6 @@
                     <p class="h3-text fade-in fade-in-left" style="font-size: 1.5vw;">Informatiepagina’s koppelen:</p>
                     <p class="text fade-in fade-in-left">Elke QR-code is verbonden met een pagina die tekst, foto’s en audio toont.
                         Bezoekers kunnen de informatie eenvoudig bekijken door de QR-code te scannen met hun telefoon.</p>
-
                 </div>
                 <div class="col-6 videodiv fade-in fade-in-right">
                     <img class="museumphoto bounce" id="museumphoto_modal" src="./img/photo-5.png" alt="Spel interface"
@@ -657,6 +653,7 @@
 </body>
 
 </html>
+<!-- modal -->
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
