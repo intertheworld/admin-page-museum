@@ -76,7 +76,10 @@ Museum-QR-Code/
 │   └── login-page.js            # Verwerkt inlogformulier
 ├── style/                       # CSS-bestanden
 │   ├── home-page.css            # Stijlen voor startpagina
-│   └── museum.css               # Stijlen voor adminpaneel
+│   ├── login-page.css           # Stijlen voor loginpagina
+│   ├── museum.css               # Stijlen voor adminpaneel
+│   ├── qr-code-edit.css         # Stijlen voor editpagina
+│   └── template.css             # Stijlen voor template
 ├── images/img/                  # Map voor geüploade afbeeldingen
 ├── home-page.php                # Startpagina met lijst van tentoonstellingen
 ├── admin-museum.php             # Adminpaneel voor QR-codebeheer
