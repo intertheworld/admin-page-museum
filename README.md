@@ -81,6 +81,7 @@ Museum-QR-Code/
 ├── home-page.php                # Startpagina met lijst van tentoonstellingen
 ├── admin-museum.php             # Adminpaneel voor QR-codebeheer
 ├── add-qr-code.php              # Formulier voor toevoegen QR-codes
+├── login-page.php               # Login pagina
 ├── qr-code-edit.php             # Formulier voor bewerken QR-codes
 ├── template.php                 # Toont tentoonstellingsdetails via QR-code
 ├── LICENSE                      # MIT-licentie
