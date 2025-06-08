@@ -1,19 +1,15 @@
-# admin-page-museum
+# Admin-page-museum
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Dit is een webapplicatie voor een museum. Beheerders kunnen QR-codes aanmaken, bewerken en verwijderen om informatie over tentoonstellingen te tonen. Gebruikers kunnen QR-codes scannen om details te zien, zoals titel, tekst, tijdperk en afbeeldingen. De applicatie heeft een inlogpagina, een adminpaneel en een tekst-naar-spraak functie om informatie voor te lezen.
 
 ## Inhoud
-- [Wat is dit project?](#wat-is-dit-project)
 - [Hoe werkt het?](#hoe-werkt-het)
 - [Installatie](#installatie)
 - [Gebruik](#gebruik)
 - [Projectstructuur](#projectstructuur)
 - [Vereisten](#vereisten)
 - [Licentie](#licentie)
-
-## Wat is dit project?
-Deze applicatie helpt musea om tentoonstellingsinformatie te delen via QR-codes. Beheerders loggen in om QR-codes te beheren, terwijl bezoekers de QR-codes scannen om details te zien. De applicatie ondersteunt ook tekst-naar-spraak om informatie voor te lezen in een mannelijke of vrouwelijke stem.
 
 ## Hoe werkt het?
 - Beheerders loggen in via een inlogpagina.
