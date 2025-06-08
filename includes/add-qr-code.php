@@ -27,7 +27,7 @@ if ($file) {
     $tijdperk = $_POST['tijdperk'] ?? '';
     $content = $_POST['text'] ?? '';
     
-    $qr_code_url = "https://api.qrserver.com/v1/create-qr-code/?data=https://admin-page-museum/template.php?id=$id&size=150x150";
+    $qr_code_url = "https://api.qrserver.com/v1/create-qr-code/?data=http://tymoshenkoandrii.provil-ict.be/admin-page-museum/template.php?id=$id&size=150x150";
     $sql = "INSERT INTO `andrii_qr_codes` (`id`, `title`, `content`, `era`, `img`, `qr_code`)
         VALUES (?, ?, ?, ?, ?, ?)";
 
