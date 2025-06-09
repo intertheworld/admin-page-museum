@@ -281,7 +281,7 @@
         .fade-in-top {
             transform: translateY(-50px);
         }
-
+        
         .fade-in.visible {
             opacity: 1;
             transform: translateX(0);
@@ -334,6 +334,15 @@
             justify-content: center;
             animation-iteration-count: infinite;
             transform-origin: bottom;
+        }
+
+        footer {
+            background: linear-gradient(135deg, rgba(0, 201, 255, 1), rgba(146, 254, 157, 1));
+            color: rgb(59, 90, 141);
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            padding: 10px 0;
         }
     </style>
 </head>
@@ -576,7 +585,11 @@
             </div>
         </div>
     </div>
-
+    <footer>
+        <p style="margin: 0;">
+            Made by Andrii Tymoshenko
+        </p>
+    </footer>
     <!-- script voor fade-in-animation -->
     <script>
         const observer = new IntersectionObserver((entries) => {
