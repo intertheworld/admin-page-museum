@@ -7,7 +7,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $userExist = false;
 
-$sql = "SELECT `id`,`username`, `password`,`admin` FROM `andrii_users` WHERE `username` = ? AND `password` =?";
+$sql = "SELECT `id`,`username`, `password`,`admin` FROM `andrii_users` WHERE `username` = ? AND `password` = SHA2(?, 256)";
 $statement = $conn->prepare($sql);
 $statement->bind_param('ss', $username, $password);
 $statement->execute();
